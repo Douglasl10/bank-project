@@ -1,0 +1,392 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 50px 270px 1fr;
+  gap: 15px;
+  background-color: #1D1D41;
+  box-shadow: 10px 1px 5px 0px rgba(0, 0, 0, 0.51);
+  border-radius: 0 20px;
+  width: 300px;
+  height: 110vh;
+}
+
+.img-grupo {
+  margin: 20px;
+}
+
+.links-list {
+  list-style: none;
+  font-size: 18px;
+}
+
+.links {
+  margin: 15px;
+  padding: 8px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.links:hover {
+  background-color: #6359E9;
+  color: #ffffff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 12px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  background: #ffffff24;
+}
+
+
+.links-active {
+  background-color: #6359E9;
+  color: #ffffff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.links-active:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.5s;
+  background: #ffffff24;
+}
+
+.divide {
+  width: 200px;
+  height: 1px;
+  /* Espessura da linha */
+  background-color: #522ba7;
+  /* Cor da linha */
+  margin: 10px 0;
+}
+
+/* From Uiverse.io by alexruix */
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 15px;
+  padding: 10px;
+  top: 20%;
+  left: 50%;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked+.slider {
+  background-color: #522ba7;
+}
+
+input:checked+.slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13vw;
+  border: 0.3px solid #6359E9;
+  border-radius: 5px;
+}
+
+.profile:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.5s;
+}
+
+.img-mask {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.img-mask:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.5s;
+  opacity: 0.5;
+}
+
+.title-prof {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.p-prof {
+  color: #fff;
+  text-align: center;
+}
+
+.search {
+  position: absolute;
+  top: 20px;
+  left:70%;
+  padding: 8px;
+  width: 300px;
+  height: 15px;
+  border-radius: 20px;
+  border: 2px solid #6359E9;
+  background-color: #1D1D41;
+  color: #fff;
+  font-size: 14PX;
+}
+
+.box-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 321px;
+  height: 130px;
+  position: absolute;
+  background-color: #1D1D41;
+  border-radius: 16px;
+  top: 50px;
+  left: 20%;
+  padding: 8px;
+}
+
+.box-one-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.title-box {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.porcent-one {
+  color: #13cb26;
+  font-size: 14px;
+  text-align: center;
+}
+
+.box-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 321px;
+  height: 130px;
+  position: absolute;
+  background-color: #1D1D41;
+  border-radius: 16px;
+  top: 50px;
+  left: 43%;
+  padding: 8px;
+}
+
+.box-two-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.title-box2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.porcent-two {
+  color: #ea1111;
+  font-size: 14px;
+  text-align: center;
+}
+
+.box-analytics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 642px;
+  height: 382px;
+  position: absolute;
+  background-color: #1D1D41;
+  border-radius: 16px;
+  top: 28%;
+  left: 22%;
+  padding: 8px;
+}
+
+.img-grafico {
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.tilte-analytics{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 374px;
+  height: 433px;
+  position: absolute;
+  background-color: #1D1D41;
+  border-radius: 16px;
+  top: 14%;
+  left: 68%;
+  padding: 8px;
+}
+
+.title-card{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.p-card{
+  color: #ffffff4d;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.button-container {
+  display: flex; 
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: 20px; 
+}
+
+.button-card{
+  width: 100px;
+  height: 50px;
+  border-radius: 16px;
+  border: 1px solid #6359E9;
+  background-color: #28096b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-card:hover {
+  opacity: 0.2;
+  transition-duration: 0.5s;
+  background: #6359E9;
+  color: #fff;
+}
+
+.box-transf{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 140px;
+  position: absolute;
+  background-color: #1D1D41;
+  border-radius: 16px;
+  top: 80%;
+  left: 20%;
+  padding: 8px;
+}
+
+.title-transf{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.p-transf{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: start;
+  margin: 10px 100px -30px 0px;
+  padding-right: 30px;
+}
+
+.img-moeda{
+  width: 24px;
+  height: 24px;
+  margin: 10px 0px 30px 200px;
+}
+
+.content-transf{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 120px;
+  position: absolute;
+  border-radius: 16px;
+  top: 10px;
+  left: 60%;
+  padding: 8px;
+}
+
+.img-btc{
+  width: 100%;
+  height: 110px;
+
+}
