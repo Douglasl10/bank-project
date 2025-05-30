@@ -1,5 +1,27 @@
 
 const toggle = document.getElementById('toggle');
+const circulo = document.querySelector('.circle')
+const text = document.querySelector('.para')
+const text1 = document.querySelector('.parag')
+const tri = document.querySelector('.triangulo')
+
+tri.addEventListener('click', function(){
+     text.innerHTML = "total income $632.000"
+     
+     setTimeout(function(){
+        location.reload()
+     }, 5000)
+     
+})
+
+circulo.addEventListener('click', function(){
+   
+    text1.innerHTML = "total expense $105.821,28"
+
+      setTimeout(function(){
+        location.reload()
+     }, 5000)
+})
 
 toggle.addEventListener('change', function(){
 
