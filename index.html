@@ -34,11 +34,8 @@
         </div>
     </div>
 
-
-    
         <input type="text" class="search" placeholder="Search">
     
-
     <div class="box-one">
         <p class="box-one-text">
             Total Income
@@ -48,29 +45,26 @@
     </div>
     <div class="box-two">
         <p class="box-two-text">
-            Total Income
+            Total expense
         </p>
-        <h2 class="title-box2">$632.000</h2>
+        <h2 class="title-box2">$632.200,00</h2>
         <p class="porcent-two">-0.86% ↓</p>
     </div>
 
+    <h1 class="tilte-analytics">Analytics ↑↓</h1>
+
     <div class="box-analytics">
-        <h1 class="tilte-analytics">Analytics ↑↓</h1>
-        <p class="para"></p>
-        <p class="parag"></p>
-        <div class="circle">
-            <div class="triangulo">
-            </div>
-        </div>
+        <canvas id="myPieChart" width="200" height="200"></canvas>
     </div>
     <div class="box-card">
         <h1 class="title-card">My Card</h1>
         <p class="p-card">Card Balance</p>
-        <h2 class="title-card">$5.750,20</h2>
+        <h2 class="title-card">Conta Corrente</h2>
         <img src="./assets/Card 1.png" alt="cartao" class="img-card">
         <div class="button-container">
-            <button class="button-card">Manege Card</button>
-            <button class="button-card">Transfer</button>
+            <button class="button-card" id="maneg">Manege Card</button>
+            <button class="button-card" id="button-card">Transfer</button>
+            <p class="para"></p>
         </div>
     </div>
 
@@ -82,11 +76,13 @@
         <img src="./assets/real.png" alt="real" class="img-moeda">
          
         <div class="content-transf">
-            <img src="./assets/btc-grafico.webp" alt="btc" class="img-btc">
-        </div>
+           <canvas id="transfChart"></canvas>
+    
     </div>
 
 </body>
-<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js" defer></script>
+
 
 </html>
