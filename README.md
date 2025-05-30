@@ -29,4 +29,4 @@ Buscar e exibir o preço do Bitcoin em tempo real a partir da API da Binance, at
 <br>
 <p>O projeto é uma boa base para um painel de controle financeiro, com potencial para expansão, como a adição de mais funcionalidades, integração com outras APIs e melhorias na interface do usuário.</p>
 <br>
-<img src="https://raw.githubusercontent.com/Douglasl10/bank-project/refs/heads/master/assets/capa.png"/>
+<img src="https://raw.githubusercontent.com/Douglasl10/bank-project/refs/heads/master/assets/capa1.png"/>
